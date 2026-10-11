@@ -4,11 +4,11 @@ variable "vpc_cidr" {
   default     = "10.0.0.0/16"
 }
 
-variable "vpc_tags" {
-  description = "Tags to apply to the VPC"
+variable "default_tags" {
+  description = "Default tags for AWS resources"
   type        = map(string)
   default = {
-    Name        = "terraform-course"
+    Name        = "terraform-lab"
     Environment = "lab"
     ManagedBy   = "Terraform"
   }
